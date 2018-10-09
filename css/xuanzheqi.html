@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css选择器</title>
+		<style>
+			div {
+				background: red;
+			}
+			#aa {
+				background: blue;
+			}
+			.aa{
+				background: red !important;
+			}
+			#bb {
+				background: blue;
+			}
+			#bb {
+				background: yellow;
+			}
+			#cc {
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<p>css 为层叠样式表</p>
+		<p>所以会对样式进行层叠</p>
+		<h1>基本规则</h1>
+		<p>重要的地方，权重问题</p>
+		<ul>
+			<li>ID选择器</li>
+			<li>类 属性 伪类 选择器</li>
+			<li>元素 伪元素</li>
+			<li>其他选择器</li>
+		</ul>
+		<hr />
+		<div id="aa" class="aa">123</div>
+		<div id="bb">
+			12345
+		</div>
+		<div id="cc" style="background:red">
+			123456
+		</div>
+		<ul>
+			<li>!important</li>
+			<li>同样的权重 在后的有效</li>
+			<li>style 上的属性样式 最高</li>
+		</ul>
+	</body>
+</html>
